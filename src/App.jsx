@@ -11,7 +11,7 @@ import './App.css'
 export default function App() {
   return (
     <QuoteProvider>
-      <BrowserRouter basename="/green-orb">
+      <BrowserRouter>
         <Navbar />
         <main style={{ flex: 1 }}>
           <Routes>
