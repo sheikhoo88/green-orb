@@ -195,13 +195,24 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* ── Map placeholder ── */}
-      <div className="map-placeholder">
-        <div className="container">
-          <div className="map-inner">
-            <span className="map-pin">📍</span>
-            <p>Green Orb Solutions Ltd · 14 Solar Way · London EC1A 1BB</p>
-            <p>Installing solar panels across England & Wales</p>
+      {/* ── Map ── */}
+      <div className="map-section">
+        <iframe
+          className="map-iframe"
+          title="Green Orb Solutions Location"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-0.1222%2C51.5077%2C-0.0822%2C51.5277&layer=mapnik&marker=51.5177%2C-0.1022"
+          allowFullScreen
+          loading="lazy"
+        />
+        <div className="map-card">
+          <div className="map-card__orb" />
+          <div className="map-card__body">
+            <span className="map-card__tag">Our Office</span>
+            <p className="map-card__name">Green Orb Solutions Ltd</p>
+            <p className="map-card__addr">14 Solar Way, London<br />EC1A 1BB, United Kingdom</p>
+            <div className="map-card__divider" />
+            <a href="tel:08001234567" className="map-card__phone">0800 123 4567</a>
+            <p className="map-card__coverage">Installing across England & Wales</p>
           </div>
         </div>
       </div>
